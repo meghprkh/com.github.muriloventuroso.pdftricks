@@ -1,9 +1,9 @@
 {
     "app-id": "com.github.muriloventuroso.pdftricks",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "20.08",
+    "runtime-version": "22.08",
     "base": "io.elementary.BaseApp",
-    "base-version": "juno-20.08",
+    "base-version": "juno-22.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "com.github.muriloventuroso.pdftricks",
     "finish-args": [
@@ -97,8 +97,8 @@
             ],
             "sources": [{
                     "type": "archive",
-                    "url": "https://download.imagemagick.org/ImageMagick/download/ImageMagick-7.0.11-14.tar.xz",
-                    "sha256": "a1010a27b93f07374400988d026449c8b21e10178910cd473b4170b4d2c6c030"
+                    "url": "https://imagemagick.org/archive/ImageMagick-7.1.0-60.tar.xz",
+                    "sha256": "ea1a6de16328b0801d684df02498334bff5ad70521f0c509ea9f1209eb4ac5f6"
                 },
                 {
                     "type": "shell",
@@ -113,8 +113,8 @@
             "buildsystem": "meson",
             "sources": [{
                     "type": "archive",
-                    "url": "https://github.com/muriloventuroso/pdftricks/archive/0.3.1.tar.gz",
-                    "sha256": "af107d9f5b238a65a78158f3e38ae4cc07a1ea9bdb736fb64cb85fdaa9867721"
+                    "url": "https://github.com/muriloventuroso/pdftricks/archive/0.4.1.tar.gz",
+                    "sha256": "4b0fa5d73621ef42d6d0040ec2147a43bae2337ea722651525f080f2ae78bea3"
                 },
                 {
                     "type": "patch",
