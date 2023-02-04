@@ -1,14 +1,14 @@
 {
     "app-id": "com.github.muriloventuroso.pdftricks",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "20.08",
+    "runtime-version": "22.08",
     "base": "io.elementary.BaseApp",
-    "base-version": "juno-20.08",
+    "base-version": "juno-22.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "com.github.muriloventuroso.pdftricks",
     "finish-args": [
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--device=dri",
         "--socket=wayland"
     ],
@@ -93,18 +93,17 @@
                 "--with-png",
                 "--with-jpeg",
                 "--with-zlib",
+                "--with-gvc=no",
                 "--enable-zero-configuration"
             ],
             "sources": [{
                     "type": "archive",
-                    "url": "https://download.imagemagick.org/ImageMagick/download/ImageMagick-7.0.11-14.tar.xz",
+                    "url": "https://download.imagemagick.org/ImageMagick/download/releases/ImageMagick-7.0.11-14.tar.xz",
                     "sha256": "a1010a27b93f07374400988d026449c8b21e10178910cd473b4170b4d2c6c030"
                 },
                 {
-                    "type": "shell",
-                    "commands": [
-                        "sed -i '32a <policy domain=\\\\\"coder\\\\\" rights=\\\\\"read | write\\\\\" pattern=\\\\\"PDF\\\\\"/> \\\\' MagickCore/policy-private.h"
-                    ]
+                    "type": "patch",
+                    "path": "patches/magick-policy.patch"
                 }
             ]
         },
@@ -118,7 +117,10 @@
                 },
                 {
                     "type": "patch",
-                    "path": "apply-eos-theme"
+                    "paths": [
+                        "patches/apply-eos-theme.patch",
+                        "patches/pdftricks-meson.patch"
+                    ]
                 }
             ]
         }

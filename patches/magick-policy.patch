@@ -1,0 +1,10 @@
+--- imagemagick-1/MagickCore/policy-private.h-orig	2023-02-03 12:24:30.678047929 -0500
++++ imagemagick-1/MagickCore/policy-private.h	2023-02-03 09:01:37.796393759 -0500
+@@ -30,6 +30,7 @@
+ static const char
+   *ZeroConfigurationPolicy = \
+ "<policymap> \
++<policy domain=\"coder\" rights=\"read | write\" pattern=\"PDF\"/> \
+ </policymap>";
+ #endif
+ 
