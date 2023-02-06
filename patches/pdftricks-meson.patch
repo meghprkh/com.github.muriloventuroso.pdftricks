@@ -1,0 +1,18 @@
+--- pdftricks/data/meson.build-orig	2023-02-03 10:36:48.528706689 -0500
++++ pdftricks/data/meson.build	2023-02-03 10:36:58.975922751 -0500
+@@ -29,7 +29,6 @@
+ endforeach
+ 
+ i18n.merge_file (
+-    'desktop',
+     input: meson.project_name() + '.desktop.in',
+     output: meson.project_name() + '.desktop',
+     install: true,
+@@ -40,7 +39,6 @@
+ 
+ 
+ i18n.merge_file (
+-    'appdata',
+     input: meson.project_name() + '.appdata.xml.in',
+     output: meson.project_name() + '.appdata.xml',
+     install: true,
