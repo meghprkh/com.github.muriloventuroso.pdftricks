@@ -98,8 +98,8 @@
             ],
             "sources": [{
                     "type": "archive",
-                    "url": "https://download.imagemagick.org/ImageMagick/download/releases/ImageMagick-7.0.11-14.tar.xz",
-                    "sha256": "a1010a27b93f07374400988d026449c8b21e10178910cd473b4170b4d2c6c030"
+                    "url": "https://imagemagick.org/archive/ImageMagick-7.1.0-61.tar.xz",
+                    "sha256": "4b4f9437666ef1a87df69b34bc8abdf7ad05d524c00dd1d63f6699e6ab1ed94e"
                 },
                 {
                     "type": "patch",
@@ -112,8 +112,8 @@
             "buildsystem": "meson",
             "sources": [{
                     "type": "archive",
-                    "url": "https://github.com/muriloventuroso/pdftricks/archive/0.3.1.tar.gz",
-                    "sha256": "af107d9f5b238a65a78158f3e38ae4cc07a1ea9bdb736fb64cb85fdaa9867721"
+                    "url": "https://github.com/muriloventuroso/pdftricks/archive/0.4.1.tar.gz",
+                    "sha256": "4b0fa5d73621ef42d6d0040ec2147a43bae2337ea722651525f080f2ae78bea3"
                 },
                 {
                     "type": "patch",
