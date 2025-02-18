@@ -118,7 +118,7 @@
                 {
                     "type": "patch",
                     "paths": [
-                        "patches/appdata-keys.patch",
+                        "patches/appdata-linter-validations.patch",
                         "patches/apply-eos-theme.patch",
                         "patches/pdftricks-meson.patch"
                     ]

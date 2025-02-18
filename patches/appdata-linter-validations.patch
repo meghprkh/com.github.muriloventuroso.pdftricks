@@ -1,8 +1,8 @@
 diff --git a/data/com.github.muriloventuroso.pdftricks.appdata.xml.in b/data/com.github.muriloventuroso.pdftricks.appdata.xml.in
-index aa5836a..6e5c84a 100644
+index aa5836a..6a555a0 100644
 --- a/data/com.github.muriloventuroso.pdftricks.appdata.xml.in
 +++ b/data/com.github.muriloventuroso.pdftricks.appdata.xml.in
-@@ -5,8 +5,6 @@
+@@ -5,10 +5,9 @@
    <metadata_license>CC0-1.0</metadata_license>
    <project_group>MuriloVenturoso</project_group>
    <project_license>GPL-3.0+</project_license>
@@ -10,8 +10,11 @@ index aa5836a..6e5c84a 100644
 -  <value key="x-appcenter-stripe">pk_live_8nDudUPTmiwzRlzvKulsBlVm</value>
    <name>PDF Tricks</name>
    <summary>Tricks for PDF Files</summary>
++  <launchable type="desktop-id">com.github.muriloventuroso.pdftricks.desktop</launchable>
    <description>
-@@ -172,6 +170,7 @@
+     <p>A simple, efficient application for small manipulations in PDF files. </p>
+     <ul>
+@@ -172,6 +171,7 @@
    <custom>
      <value key="x-appcenter-color-primary">#F6546A</value>
      <value key="x-appcenter-color-primary-text">#fff</value>
